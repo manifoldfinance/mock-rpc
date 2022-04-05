@@ -1,0 +1,20 @@
+{
+  "name": "mock-rpc-relay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.mjs",
+  "scripts": {
+    "server": "nodemon --experimental-json-modules src/server.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@mswjs/http-middleware": "0.2.0",
+    "ethers": "5.5.4",
+    "express": "4.17.3",
+    "headers-utils": "3.0.2",
+    "msw": "0.38.1",
+    "node-fetch": "2.6.7",
+    "nodemon": "2.0.15"
+  }
+}

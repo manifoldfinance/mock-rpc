@@ -1,0 +1,27 @@
+{
+    "devshell": {
+      "branch": "master",
+      "description": "Per project developer environments",
+      "homepage": "https://numtide.github.io/devshell/",
+      "owner": "numtide",
+      "repo": "devshell",
+      "rev": "7033f64dd9ef8d9d8644c5030c73913351d2b660",
+      "sha256": "1vdxzqcjgv1j1z5l0d69gifc1xcd6wk9gcddhza6j4arv9k0axql",
+      "type": "tarball",
+      "url": "https://github.com/numtide/devshell/archive/7033f64dd9ef8d9d8644c5030c73913351d2b660.tar.gz",
+      "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+      "branch": "nixpkgs-unstable",
+      "description": "Nix Packages collection",
+      "homepage": "",
+      "owner": "NixOS",
+      "repo": "nixpkgs",
+      "rev": "b66b39216b1fef2d8c33cc7a5c72d8da80b79970",
+      "sha256": "0xqxrmdr3adcdj1ksnwf8w7d0qjzsc4sgzfcmvvrpk7hrc5q9cvg",
+      "type": "tarball",
+      "url": "https://github.com/NixOS/nixpkgs/archive/b66b39216b1fef2d8c33cc7a5c72d8da80b79970.tar.gz",
+      "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+  }
+  

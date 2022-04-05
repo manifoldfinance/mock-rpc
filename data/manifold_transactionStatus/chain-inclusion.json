@@ -1,0 +1,28 @@
+{
+  "id": "1",
+  "jsonrpc": "2.0",
+  "method": "manifold_transactionStatus",
+  "result": {
+    "receivedAt": "<REPLACE_DATE>",
+    "relayedAt": "<REPLACE_DATE>",
+    "minedAt": "<REPLACE_DATE>",
+    "relayFailure": false,
+    "relayResponses": {
+      "Ethermine": {
+        "error": "bar"
+      },
+      "EdenNetwork": {
+        "error": "foo"
+      },
+      "FlashBotsRPC": {
+        "response": {
+          "error": null,
+          "id": "<REPLACE_TX_HASH>",
+          "jsonrpc": "2.0",
+          "result": "<REPLACE_TX_HASH>"
+        }
+      }
+    },
+    "transactionHash": "<REPLACE_TX_HASH>"
+  }
+}

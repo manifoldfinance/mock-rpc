@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "jsonrpc": "2.0",
+  "method": "manifold_transactionStatus",
+  "result": {
+    "receivedAt": "<REPLACE_DATE>",
+    "transactionHash": "<REPLACE_TX_HASH>"
+  }
+}
