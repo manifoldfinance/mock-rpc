@@ -6,8 +6,8 @@
   "scripts": {
     "server": "nodemon --experimental-json-modules src/server.mjs"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "CommodityStream LLC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@mswjs/http-middleware": "0.2.0",
     "ethers": "5.5.4",
