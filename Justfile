@@ -1,10 +1,11 @@
-# just is a handy way to save and run project-specific commands.
-#
-# https://github.com/casey/just
+#!/usr/bin/env just --justfile
 
-# list all tasks
-default:
+_default:
   just --list
+
+# load .env file
+set dotenv-load
+
 
 # Build the whole project
 build:
