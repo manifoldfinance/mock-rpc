@@ -4,12 +4,15 @@
   "description": "",
   "main": "src/server.mjs",
   "scripts": {
-    "server": "nodemon --experimental-json-modules src/server.mjs"
+    "server": "nodemon --experimental-json-modules src/server.mjs",
+    "mock-server": "open-rpc-mock-server"
   },
   "author": "CommodityStream LLC",
   "license": "Apache-2.0",
   "devDependencies": {
     "@mswjs/http-middleware": "0.2.0",
+    "@open-rpc/mock-server": "^1.7.4",
+    "@types/node": "^14.18.12",
     "ethers": "5.5.4",
     "express": "4.17.3",
     "headers-utils": "3.0.2",
