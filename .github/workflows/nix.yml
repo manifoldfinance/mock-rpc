@@ -14,10 +14,8 @@ jobs:
     - uses: cachix/cachix-action@v10
       with:
         name: mock-rpc
-      extra_nix_config: |
-        experimental-features = nix-command flakes ca-references
     - run: GITHUB_PATH= nix-shell --run "niv update"
-    - run: nix-env -iA  -f 
+    - run: nix-command flakes ca-references
     - run: nix-build
     - run: nix-shell --run "pre-commit run -a"
     - name: Create Pull Request
