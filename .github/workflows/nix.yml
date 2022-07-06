@@ -1,0 +1,26 @@
+name: "RPC Integration tests"
+on:
+  push:
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    # We use `install-nix-action` and `cachix-action` to quickly install the
+    # latest Quickstrom from a binary cache.
+    - uses: cachix/install-nix-action@v17
+    - uses: cachix/cachix-action@v10
+      with:
+        name: mock-rpc
+    - run: GITHUB_PATH= nix-shell --run "niv update"
+    - run: nix-command flakes ca-references
+    - run: nix-build
+    - run: nix-shell --run "pre-commit run -a"
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3.10.1
+      with:
+        commit-message: "[automation] update niv dependencies"
+        title: "[automation] update niv dependencies"
+        branch: "automation/update-niv-dependencies"    
